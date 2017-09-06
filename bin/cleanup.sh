@@ -1,6 +1,6 @@
 #!/bin/sh
 
-api='https://dns.beta.gandi.net/api/v5'
+api='https://dns.api.gandi.net/api/v5'
 
 domain=$(echo "$CERTBOT_DOMAIN" | sed -r 's/.+\.(.+\..+)/\1/')
 subdomain=$(echo "$CERTBOT_DOMAIN" | sed -r 's/(.+)\..+\..+/\1/')
