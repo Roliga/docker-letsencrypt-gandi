@@ -1,6 +1,6 @@
 #!/bin/sh
 
-. /etc/update-certs/config
+[[ -f /etc/update-certs/config ]] && . /etc/update-certs/config
 
 while true; do
 	certbot certonly --manual \
