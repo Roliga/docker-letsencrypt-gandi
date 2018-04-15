@@ -15,6 +15,7 @@ while true; do
 		--post-hook reload-nginx.sh \
 		--email "$EMAIL" \
 		-d "$DOMAINS" \
+		--server https://acme-v02.api.letsencrypt.org/directory
 		"$@"
 
 	sleep 5d
