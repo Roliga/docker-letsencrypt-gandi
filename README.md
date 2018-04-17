@@ -1,7 +1,7 @@
 docker-letsencrypt-gandi
 ========================
 
-This container generates [LetsEncrypt](https://www.letsencrypt.org) certificates for subdomains at [Gandi](https://www.gandi.net) using the DNS-01 challange type and Gandi's new LiveDNS API. It can also send a SIGHUP signal to a [Nginx container](https://store.docker.com/images/nginx) which tells it to reload its certificates.
+This container generates [LetsEncrypt](https://www.letsencrypt.org) certificates for subdomains at [Gandi](https://www.gandi.net) using the DNS-01 challenge type and Gandi's new LiveDNS API. It can also send a SIGHUP signal to a [Nginx container](https://store.docker.com/images/nginx) which tells it to reload its certificates.
 
 This image is based on Alpine and uses [Certbot](https://certbot.eff.org/) to communicate with Letsencrypt.
 

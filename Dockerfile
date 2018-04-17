@@ -1,7 +1,7 @@
-FROM alpine:latest
+FROM certbot/certbot:latest
 
 RUN apk add --update \
-	certbot curl && \
+	curl && \
 	rm -rf /var/cache/apk/*
 
 VOLUME /etc/letsencrypt
